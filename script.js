@@ -26,13 +26,16 @@ function myFunc(){
 }
 function getRandomNum(max) {
   max = parseInt(max);
-  if (isNaN(max || max <1)) return 0;
+  if (isNaN(max) || max < 1) return 0;
+   return Math.floor(Math.random() * max) + 1;
+   function myAdder(x, y) {
+  return parseFloat(x) + parseFloat(y);
      
 }
 function distance(x1, y1, x2, y2) {
   let dx= Number(x2) - Number(x1);
   let dy = Number(y2) - Number(y1);
-  return Math.sqrt(dx * dy + dy * dy).toFixed(3);
+  return Math.sqrt(dx * dx + dy * dy);
 }
 
 
